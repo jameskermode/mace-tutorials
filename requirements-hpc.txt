@@ -1,0 +1,11 @@
+# Reproducible target reviewed against the MACE v0.3.16 source and tests.
+mace-torch==0.3.16
+# MACE 0.3.16 is reviewed with this range. Newer PyTorch 2.13 native Triton
+# kernels require development headers that are unavailable on MeluXina nodes.
+torch>=2.6,<2.9
+numpy>=2.0,<3
+scipy>=1.10
+matplotlib>=3.7
+PyYAML>=6
+tqdm>=4.65
+xtb>=22.1
